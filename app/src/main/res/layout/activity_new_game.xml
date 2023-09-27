@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewGame">
+
+    <TableRow
+        android:id="@+id/tableRowComputer"
+        android:layout_width="393dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262">
+
+        <ImageView
+            android:id="@+id/imageViewComputer1"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_1" />
+
+        <ImageView
+            android:id="@+id/imageViewComputer2"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_2" />
+
+        <ImageView
+            android:id="@+id/imageViewComputer3"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_3" />
+
+        <ImageView
+            android:id="@+id/imageViewComputer4"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_4" />
+
+        <ImageView
+            android:id="@+id/imageViewComputer5"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_5" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/throwButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Throw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scoreButton"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRowPlayer"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <Button
+        android:id="@+id/scoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="Score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/throwButton"
+        app:layout_constraintTop_toBottomOf="@+id/tableRowPlayer"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <TextView
+        android:id="@+id/textViewPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Human"
+        app:layout_constraintBottom_toTopOf="@+id/tableRowPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewComputer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Computer"
+        app:layout_constraintBottom_toTopOf="@+id/tableRowComputer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableRow
+        android:id="@+id/tableRowPlayer"
+        android:layout_width="385dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRowComputer"
+        app:layout_constraintVertical_bias="0.206">
+
+        <ImageView
+            android:id="@+id/imageViewHuman1"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_1" />
+
+        <ImageView
+            android:id="@+id/imageViewHuman2"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_2" />
+
+        <ImageView
+            android:id="@+id/imageViewHuman3"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_3" />
+
+        <ImageView
+            android:id="@+id/imageViewHuman4"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_4" />
+
+        <ImageView
+            android:id="@+id/imageViewHuman5"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/die_face_5" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: "
+        app:layout_constraintBottom_toTopOf="@+id/tableRowComputer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <EditText
+        android:id="@+id/editTextNumberOfPoints"
+        android:layout_width="265dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="101"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInstructions"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/textViewWinScores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H:0|C:0"
+        app:layout_constraintBottom_toTopOf="@+id/tableRowComputer"
+        app:layout_constraintEnd_toStartOf="@+id/textViewScore"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/textViewInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="To select which dice to keep for the reroll, tap on the die."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRowPlayer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

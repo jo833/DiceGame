@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/about_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:text="Welcome to the Dice Game! This project was developed as a homework assignment for a Mobile Applications class. The rules are simple: Role the dice, save whatever dice you want to keep, roll again, save again, roll to score or if you feel confident enough to beat the computer on your first or second roll select the score button." />
+</LinearLayout>
